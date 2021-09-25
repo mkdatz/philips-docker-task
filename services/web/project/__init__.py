@@ -24,7 +24,7 @@ class User(db.Model):
         self.email = email
 
 @app.route("/")
-def hello_world():
+def philips():
     return jsonify(hello="philips!")
 
 @app.route("/static/<path:filename>")
