@@ -6,8 +6,8 @@
   
      - name: Run docker command
         community.docker.docker_container_exec:
-        container: postgres:13-alpine
-        command: /bin/bash -c "PGPASSWORD=philips1 psql --host=localhost --dbname=philips_db --username=philips && \dt"
+        container: philips-docker-task_db_1
+        command: /bin/bash -c "PGPASSWORD=philips1 psql --host=localhost --dbname=philips_db --username=philips && echo 'DB Running!'"
         chdir: /root
 
     - name: docker check
