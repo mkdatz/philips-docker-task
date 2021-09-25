@@ -6,7 +6,7 @@
   
      - name: Run docker command
         community.docker.docker_container_exec:
-        container: app_postgres_1
+        container: postgres:13-alpine
         command: /bin/bash -c "PGPASSWORD=philips1 psql --host=localhost --dbname=philips_db --username=philips && \dt"
         chdir: /root
 
