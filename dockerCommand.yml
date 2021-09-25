@@ -8,12 +8,6 @@
       command: docker ps
       register: result
 
-    - name: Run docker command
-      community.docker.docker_container_exec:
-        container: app_postgres_1
-        command: /bin/bash -c "psql --version"
-        chdir: /root
-
     - name: Display
       debug:
         var: result.stdout
