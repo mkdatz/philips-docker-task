@@ -4,6 +4,10 @@
   hosts: localhost
   tasks:
   
+#    - name: Build services
+#       community.docker.docker_compose:
+#         build: yes
+  
      - name: Run docker command
         community.docker.docker_container_exec:
         container: philips-docker-task_db_1
