@@ -1,14 +1,6 @@
 import os
 from flask_sqlalchemy import SQLAlchemy
-from werkzeug.utils import secure_filename
-from flask import (
-    Flask,
-    jsonify,
-    send_from_directory,
-    request,
-    redirect,
-    url_for
-)
+from flask import Flask, jsonify, send_from_directory, request, redirect, url_for
 
 app = Flask(__name__)
 app.config.from_object("project.config.Config")
@@ -16,7 +8,7 @@ db = SQLAlchemy(app)
 
 
 class User(db.Model):
-    __tablename__ = "users"
+    __tablename__ = "people"
     id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(128), unique=True, nullable=False)
     active = db.Column(db.Boolean(), default=True, nullable=False)
