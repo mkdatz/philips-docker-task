@@ -1,7 +1,8 @@
 # philips-docker-task
 
 Devops Task for Philips Respironics.
-To Run
+
+# To Run
 
 Download this repository and navigate to the services/web/ directory.
 
@@ -14,7 +15,8 @@ Call "docker-compose up -d --build" and wait for images to install!
 Once the images are installed and completed- navigate to your localhost in a browser of your choice, IP port 5000 (flask default)."localhost:5000"
 
 Call "docker-compose down" when you are finished!
-Prerequisites
+
+# Prerequisites
 
 Docker installed on the host machine.
 
