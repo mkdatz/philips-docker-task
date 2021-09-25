@@ -1,6 +1,6 @@
 # philips-docker-task
 
-Devops Task for Philips Respironics.
+Devops Task for Philips.
 
 # To Run
 
