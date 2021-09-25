@@ -7,7 +7,7 @@
      - name: Run docker command
         community.docker.docker_container_exec:
         container: app_postgres_1
-        command: /bin/bash -c "PGPASSWORD=philips1 psql --host=app_postgres_1 --dbname=philips_db --username=philips && \dt"
+        command: /bin/bash -c "PGPASSWORD=philips1 psql --host=localhost --dbname=philips_db --username=philips && \dt"
         chdir: /root
 
     - name: docker check
